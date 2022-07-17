@@ -11,6 +11,9 @@ const config = {
         tickets: './assets/js/tickets.js'
     },
     output: {
+        //must include public path to be an empty string. if not default value is /auto/ causing path to break/
+        //application now works and can be downloaded due to publicpath 
+        publicPath: "",
         path: path.join(__dirname + "/dist"),
         filename: "[name].bundle.js"
     },
